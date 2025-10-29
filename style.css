@@ -1,0 +1,150 @@
+/* === Estilo geral === */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #d9ecff 0%, #f4f7fb 100%);
+    color: #1b263b;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* === Cabeçalho === */
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid #e0e5ec;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #1e6091;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #1e6091;
+}
+
+.info p {
+    margin: 6px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* === Seções === */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #1e6091;
+    border-left: 5px solid #1e6091;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+p, li {
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f0f7ff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: #dceefc;
+    transform: translateX(4px);
+}
+
+/* === Projetos === */
+.projetos ul li strong {
+    color: #1b4965;
+}
+
+/* === Contato === */
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #1b263b;
+    background: #eaf3fa;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.social a:hover {
+    background: #1e6091;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+/* === Rodapé === */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #6c757d;
+    border-top: 1px solid #e0e5ec;
+    padding-top: 15px;
+}
+
+/* === Responsividade === */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+}
